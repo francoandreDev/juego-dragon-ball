@@ -1,0 +1,49 @@
+.home-container {
+    text-align: center;
+    background-color: #12121215; /* Fondo oscuro */
+    min-height: 100vh; /* Ocupa toda la altura de la pantalla */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-title {
+    font-size: 2.5rem;
+    color: #ffffff; /* Blanco para contraste */
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para realzar el texto */
+}
+
+.home-description {
+    font-size: 1.2rem;
+    color: #aaaaaa; /* Gris claro para mejor visibilidad */
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5)
+}
+
+.home-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.home-link {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #61dafb; /* Azul claro */
+    color: #121212; /* Fondo oscuro para contraste */
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 0 4px 0.5px #000;
+    transition: background-color 0.3s ease, transform 0.2s ease, color 0.2s ease, box-shadow 0.3s ease;
+}
+
+.home-link:hover {
+    background-color: #21a1f1;
+    color: #000000;
+    transform: scale(1.05); /* Pequeña ampliación al pasar el cursor */
+    box-shadow: 0 0 4px 0.5px #fff
+}

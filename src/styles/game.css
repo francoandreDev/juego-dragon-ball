@@ -1,0 +1,42 @@
+.game {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.game * {
+    overflow-y: hidden;
+}
+
+.game > .title {
+    translate: 0 5rem;
+}
+
+.game .score {
+    font-size: 3rem;
+    translate: calc(100vw - ((6 * 1ch) + 15rem)) 0rem;
+}
+
+.scored {
+    position: absolute;
+    top: 5rem;
+    left: 2rem;
+}
+
+.game > * {
+    margin: 4rem 10rem 0;
+}
+
+.game img {
+    aspect-ratio: 1/2;
+    width: 150px;
+    translate: 0 50px;
+}
+
+.game canvas {
+    height: 500px;
+}

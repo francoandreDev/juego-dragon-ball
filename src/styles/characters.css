@@ -1,0 +1,99 @@
+/* Estilos para Characters */
+.characters-container {
+    padding: 7rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: #121212bf;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.characters-title {
+    font-size: 2rem;
+    text-align: center;
+    color: #ffd700; /* Amarillo tipo Dragon Ball */
+    margin: 0;
+}
+
+.characters-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.characters-list-item {
+    max-width: 350px;
+    aspect-ratio: 2/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para Character */
+.character-card {
+    background-image: linear-gradient(145deg, rgba(0, 0, 0, 0.8), rgba(34, 34, 34, 0.9));
+    color: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 
+        0 4px 6px rgba(0, 0, 0, 0.4), /* Sombra principal */
+        inset 0 1px 4px rgba(255, 255, 255, 0.1); /* Brillo interno leve */
+    transition: transform 0.2s, box-shadow 0.2s, background-image 0.2s;
+    backdrop-filter: blur(6px); /* Para lograr un efecto más metálico */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Borde tenue */
+}
+
+.character-card:hover {
+    transform: scale(1.05);
+    box-shadow: 
+        0 6px 12px rgba(0, 0, 0, 0.6), /* Sombra principal más pronunciada */
+        inset 0 1px 8px rgba(255, 255, 255, 0.2); /* Brillo interno más fuerte */;
+    background: linear-gradient(145deg, rgba(0, 0, 0, 0.9), rgba(50, 50, 50, 0.95));
+}
+
+.character-name {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+    color: #ffd700;
+}
+
+.character-image {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin: 0.5rem 0;
+}
+
+.character-card img {
+    width: 100%; /* Ajusta el ancho de la imagen al contenedor */
+    height: 350px; /* Mantiene una altura fija uniforme */
+    object-fit: cover; /* Escala la imagen para cubrir el área del contenedor */
+    object-position: top; /* Alinea la imagen desde la parte superior */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra opcional */
+    margin-bottom: 0.5rem; /* Espacio inferior */
+}
+
+
+.character-description {
+    font-size: 1rem;
+    color: #ccc;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 0.5rem;
+    line-height: 1.6;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.85);
+}

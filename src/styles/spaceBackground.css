@@ -1,0 +1,72 @@
+/* Contenedor general */
+.space-container {
+    position: fixed;
+    inset: 0;
+    overflow: clip;
+    perspective: 50px;
+    background: radial-gradient(circle, #252525, #000);
+    z-index: -1;
+}
+
+/* Estrellas */
+.stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.8);
+    animation: twinkle 4s infinite ease-in-out;
+    opacity: 0.8;
+}
+
+@keyframes twinkle {
+    0%, 100% {
+        opacity: 0.1;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+/* Planetas */
+.planet {
+    position: absolute;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    transition: transform 0.1s ease-out; /* Para que el movimiento sea más fluido */
+}
+
+/* Variabilidad de planetas */
+.planet:nth-child(5n) {
+    background: radial-gradient(circle, #ff9f43, #ff6f00);
+    box-shadow: 0 0 20px rgba(255, 159, 67, 0.8);
+}
+
+.planet:nth-child(5n+1) {
+    background: radial-gradient(circle, #8e44ad, #5b2c6f);
+    box-shadow: 0 0 20px rgba(68, 173, 168, 0.8);
+}
+
+.planet:nth-child(5n+2) {
+    background: radial-gradient(circle, #ada644, #f8ad0a);
+    box-shadow: 0 0 20px rgba(171, 173, 68, 0.8);
+}
+
+.planet:nth-child(5n+3) {
+    background: radial-gradient(circle, #44ad44, #376f2c);
+    box-shadow: 0 0 20px rgba(68, 173, 108, 0.8);
+}
+
+.planet:nth-child(5n+4) {
+    background: radial-gradient(circle, #ad4478, #542c6f);
+    box-shadow: 0 0 20px rgba(173, 68, 129, 0.8);
+}
