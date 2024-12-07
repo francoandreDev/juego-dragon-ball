@@ -80,7 +80,7 @@ Moverse y disparar: Usa el mouse o los controles de teclado para mover al person
 - Dragon Ball API: API para obtener datos de personajes y habilidades.
 
 
-##Contribuciones
+## Contribuciones
 Si deseas contribuir a este proyecto, sigue estos pasos:
 
 Haz un fork de este repositorio.
